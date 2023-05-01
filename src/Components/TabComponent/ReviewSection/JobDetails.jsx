@@ -1,5 +1,6 @@
-import { Box, TextField, TextareaAutosize } from '@mui/material'
+import { Box, Button, TextField, TextareaAutosize } from '@mui/material'
 import React from 'react'
+import SendIcon from '@mui/icons-material/Send';
 
 const JobDetails = () => {
 
@@ -33,6 +34,9 @@ const JobDetails = () => {
             color="primary" fullWidth />
 
         </Box>
+      </Box>
+      <Box sx={{marginLeft: '1.1rem', display: 'flex', justifyContent: 'right'}}>
+          <Button endIcon={<SendIcon />} size='large' sx={{margin: '5px'}} variant='contained'>Publish</Button>
       </Box>
     </>
   )

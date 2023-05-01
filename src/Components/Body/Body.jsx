@@ -14,9 +14,9 @@ const Body = () => {
 
         {/* Top Navigation Bar */}
         
-        <AppBar sx={{ width: '100vw', padding: '2rem 1rem', backgroundColor: 'white' }} >
+        <AppBar sx={{ MinWidth: '100vw', padding: '2rem 1rem', backgroundColor: 'white' }} >
                 <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'end'}}>
-                    <Button variant='contained' startIcon={<AddIcon />}>Click Me</Button>
+                    <Button variant='contained' startIcon={<AddIcon />}>Post a job</Button>
                     <Box sx={{ padding: '0 25px' }}>
                         <IconButton>
                             <Badge badgeContent={9} color='primary'>

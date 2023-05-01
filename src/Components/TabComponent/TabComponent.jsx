@@ -14,6 +14,9 @@ import JobCandidateInfo from './TabPanels/JobCandidateInfo';
 import JobCandidateReview from './TabPanels/JobCandidateReview';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Button } from '@mui/material';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -62,7 +65,7 @@ const TabComponent = () => {
   };
 
   return (
-    <Box sx={{minWidth: '50rem'}}>
+    <Box sx={{minWidth: '50rem', paddingBottom: '3rem'}}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs sx={{width: 'fit-content'}} value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab icon={<WorkIcon/>} iconPosition='start' label="Define a job" {...a11yProps(0)}/>
@@ -92,6 +95,10 @@ const TabComponent = () => {
         <JobCandidateReview />
         </div>
       </TabPanel>
+      <Box sx={{marginLeft: '1.1rem'}}>
+          <Button size='large' startIcon={<ChevronLeftIcon />} sx={{margin: '5px', backgroundColor: 'rgb(45, 45, 45)'}} variant='contained'>Previous</Button>
+          <Button size='large' endIcon={<ChevronRightIcon />} sx={{margin: '5px', backgroundColor: 'rgb(45, 45, 45)'}} variant='contained'>Next</Button>
+      </Box>
     </Box>
   );
 }

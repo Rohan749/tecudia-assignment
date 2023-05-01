@@ -14,7 +14,7 @@ const Body = () => {
 
         {/* Top Navigation Bar */}
         
-        <AppBar sx={{ padding: '2rem 1rem', backgroundColor: 'white' }} >
+        <AppBar sx={{ width: '100vw', padding: '2rem 1rem', backgroundColor: 'white' }} >
                 <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'end'}}>
                     <Button variant='contained' startIcon={<AddIcon />}>Click Me</Button>
                     <Box sx={{ padding: '0 25px' }}>

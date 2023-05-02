@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div data-aos="fade" data-aos-delay="200" className='App' >
-     <Body />
+      <Body />
     </div>
   );
 }

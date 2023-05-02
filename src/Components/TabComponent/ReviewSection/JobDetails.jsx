@@ -1,6 +1,7 @@
-import { Box, Button, TextField, TextareaAutosize } from '@mui/material'
+import { Box, Button, Chip, Stack, TextField, TextareaAutosize } from '@mui/material'
 import React from 'react'
 import SendIcon from '@mui/icons-material/Send';
+import CloseIcon from '@mui/icons-material/Close';
 
 const JobDetails = () => {
 
@@ -8,7 +9,26 @@ const JobDetails = () => {
     <>
       <Box>
         <Box sx={{ marginBottom: '1rem' }}>
-          <Box>Job Description*</Box>
+          <Box sx={{ marginBottom: '2rem' }}>
+          <Box>Job Title</Box>
+          <TextField id="outlined-read-only-input"
+            defaultValue="Block-chain Developer"
+            InputProps={{
+              readOnly: true
+            }}
+            variant='outlined'
+            sx={{ backgroundColor: 'rgb(245,245,245)', }}
+            color="primary" fullWidth />
+        </Box>
+        <Box>
+          <Box>Skills</Box>
+          <Stack sx={{ marginBottom: '2rem' }} direction="row" spacing={1}>
+          <Chip icon={<CloseIcon />} label="Benefits" />
+          <Chip icon={<CloseIcon />} label="Skill 2" variant="filled" />
+          <Chip icon={<CloseIcon />} label="Skill 3" variant="filled" />
+          <Chip icon={<CloseIcon />} label="Skill 4" variant="filled" />
+        </Stack>
+        </Box>
           <TextareaAutosize
             style={{
               backgroundColor: 'rgb(245,245,245)',

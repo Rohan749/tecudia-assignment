@@ -14,7 +14,7 @@ const JobCandidateReview = () => {
           Blockchain Developer
         </Typography>
         <Divider />
-        <Accordion>
+        <Accordion defaultExpanded={true}>
           <AccordionSummary sx={{ padding: '1.5rem' }}
             expandIcon={<ExpandMoreIcon />}
           >Candidate Details</AccordionSummary>
@@ -25,7 +25,7 @@ const JobCandidateReview = () => {
           </AccordionDetails>
         </Accordion>
 
-        <Accordion>
+        <Accordion defaultExpanded={true}>
           <AccordionSummary sx={{ padding: '1.5rem' }}
             expandIcon={<ExpandMoreIcon />}
           >Salary Details</AccordionSummary>
@@ -36,7 +36,7 @@ const JobCandidateReview = () => {
           </AccordionDetails>
         </Accordion>
 
-        <Accordion>
+        <Accordion defaultExpanded={true}>
           <AccordionSummary sx={{ padding: '1.5rem' }}
             expandIcon={<ExpandMoreIcon />}
           >Job Description</AccordionSummary>

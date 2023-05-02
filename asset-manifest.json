@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tecudia-assignment/static/css/main.fa4071bd.css",
-    "main.js": "/tecudia-assignment/static/js/main.cc293747.js",
+    "main.js": "/tecudia-assignment/static/js/main.66e5f97b.js",
     "index.html": "/tecudia-assignment/index.html",
     "main.fa4071bd.css.map": "/tecudia-assignment/static/css/main.fa4071bd.css.map",
-    "main.cc293747.js.map": "/tecudia-assignment/static/js/main.cc293747.js.map"
+    "main.66e5f97b.js.map": "/tecudia-assignment/static/js/main.66e5f97b.js.map"
   },
   "entrypoints": [
     "static/css/main.fa4071bd.css",
-    "static/js/main.cc293747.js"
+    "static/js/main.66e5f97b.js"
   ]
 }
